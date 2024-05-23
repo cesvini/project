@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    float c, i, t;
+    float m; // montante
+    float lucro;
+    
+    cin >> c >> i >> t;
+    
+    // calculando o montante e o lucro
+    m = c * pow(1 + i / 100, t);
+    lucro = m - c;
+    
+    // imprimindo o lucro com 2 casas decimais
+    cout << fixed << setprecision(2);
+    cout << "LUCRO = " << lucro << endl;
+
+    return 0;
+}
